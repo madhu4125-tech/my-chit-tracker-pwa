@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17365D">
+
+  <title>My Chit Tracker</title>
+
+  <meta name="description"
+        content="Open My Chit Tracker">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #17365D, #2563A6);
+      color: white;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      padding: 35px 25px;
+      text-align: center;
+      background: white;
+      color: #17365D;
+      border-radius: 20px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 26px;
+    }
+
+    p {
+      color: #64748b;
+      line-height: 1.6;
+    }
+
+    .open-button {
+      display: block;
+      margin-top: 25px;
+      padding: 16px;
+      background: #17365D;
+      color: white;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    .open-button:hover {
+      background: #2563A6;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="logo">💰</div>
+
+    <h1>My Chit Tracker</h1>
+
+    <p>
+      Manage your chit funds, monthly payments,
+      interest and profits in one place.
+    </p>
+
+    <a
+      class="open-button"
+      href="https://script.google.com/macros/s/AKfycbyWH9H-cpWZJMcyMpM9w-EecA6jn8d_rH_CNXSokgXY4Q4bv6RlTaArfdjmR99QCB77EA/exec"
+      target="_blank"
+      rel="noopener">
+      Open My Chit Tracker
+    </a>
+
+    <div class="footer">
+      My Chit Tracker · Personal Finance
+    </div>
+
+  </div>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js")
+          .catch(error => console.error(
+            "Service Worker registration failed:", error
+          ));
+      });
+    }
+  </script>
+
+</body>
+</html>
