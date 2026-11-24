@@ -1,0 +1,21 @@
+
+{
+  "id": "./",
+  "name": "My Chit Tracker",
+  "short_name": "Chit Tracker",
+  "description": "Personal Chit Fund Tracker",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#17365D",
+  "theme_color": "#17365D",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
